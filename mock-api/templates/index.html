@@ -15,7 +15,7 @@
         <nav>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="login.html">Login</a></li>
+                <li><a href="login.html" id="login-link">Login</a></li>
             </ul>
         </nav>
     </header>
@@ -24,39 +24,15 @@
             <label for="country-filter">Filter by Country:</label>
             <select id="country-filter">
                 <option value="all">All</option>
-                <option value="us">United States</option>
-                <option value="ca">Canada</option>
             </select>
         </section>
         <section id="places-list">
-            <div class="place-card">
-                <img src="{{ url_for('static', filename='images/beach-house.jpg') }}" alt="Beautiful Beach House" class="place-image">
-                <h3>Beautiful Beach House</h3>
-                <p>Price per night: $150</p>
-                <p>Location: Los Angeles, United States</p>
-                <a href="place.html">
-                <button class="details-button">View Details</button>
-                </a>
-            </div>
-            <div class="place-card">
-                <img src="{{ url_for('static', filename='images/cozy-cabin.jpg') }}" alt="Cozy Cabin" class="place-image">
-                <h3>Cozy Cabin</h3>
-                <p>Price per night: $100</p>
-                <p>Location: Toronto, Canada</p>
-                <button class="details-button">View Details</button>
-            </div>
-            <div class="place-card">
-                <img src="{{ url_for('static', filename='images/modern-apartment.jpg') }}" alt="Modern Apartment" class="place-image">
-                <h3>Modern Apartment</h3>
-                <p>Price per night: $200</p>
-                <p>Location: New York, United States</p>
-                <button class="details-button">View Details</button>
-            </div>
+
         </section>
     </main>
     <footer>
         <p>&copy; 2024 HBnB Evolution. All rights reserved.</p>
     </footer>
-    <script src="{{ url_for('static', filename='scripts/script.js') }}"></script>
+    <script src="{{ url_for('static', filename='scripts/script-index.js') }}"></script>
 </body>
 </html>

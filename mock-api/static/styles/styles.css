@@ -43,6 +43,12 @@ header .nav-links a {
 header .nav-links a:hover {
     background-color: #ff5722;
 }
+
+#login-link {
+    margin-top: -10px;
+    display: none;
+}
+
 main {
     padding: 20px;
 	padding-bottom: 100px;

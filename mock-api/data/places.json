@@ -14,6 +14,7 @@
         "max_guests": 6,
         "latitude": 40.7128,
         "longitude": -74.0060,
+        "image_url": "images/place1.jpg",
         "amenities": ["WiFi", "Pool", "Air Conditioning"],
         "reviews": [
             {
@@ -44,6 +45,7 @@
         "latitude": 42.3601,
         "longitude": -71.0589,
         "amenities": ["WiFi", "Fireplace"],
+        "image_url": "images/place2.jpg",
         "reviews": []
     },
     {
@@ -79,6 +81,7 @@
         "max_guests": 4,
         "latitude": 43.6532,
         "longitude": -79.3832,
+        "image_url": "images/place3.jpg",
         "amenities": ["WiFi", "Gym"],
         "reviews": []
     },
@@ -145,6 +148,7 @@
         "max_guests": 10,
         "latitude": 42.3601,
         "longitude": -71.0589,
+        "image_url": "images/place1.jpg",
         "amenities": ["WiFi", "Breakfast"],
         "reviews": []
     },
@@ -176,6 +180,7 @@
         "city_name": "Toronto",
         "country_code": "CA",
         "country_name": "Canada",
+        "image_url": "images/place2.jpg",
         "number_of_rooms": 3,
         "number_of_bathrooms": 2,
         "max_guests": 6,
@@ -304,14 +309,14 @@
         "description": "A charming townhouse.",
         "price_per_night": 110.0,
         "city_id": "city-5",
-        "city_name": "Vancouver",
-        "country_code": "CA",
-        "country_name": "Canada",
+        "city_name": "Paris",
+        "country_code": "FR",
+        "country_name": "France",
         "number_of_rooms": 3,
         "number_of_bathrooms": 2,
         "max_guests": 6,
-        "latitude": 49.2827,
-        "longitude": -123.1207,
+        "latitude": 48.866667,
+        "longitude": 2.333333,
         "amenities": ["WiFi", "Fireplace"],
         "reviews": [
             {
@@ -345,15 +350,15 @@
         "host_name": "Jane Smith",
         "description": "A small guest house.",
         "price_per_night": 50.0,
-        "city_id": "city-2",
-        "city_name": "Boston",
-        "country_code": "US",
-        "country_name": "United States",
+        "city_id": "city-6",
+        "city_name": "Bordeaux",
+        "country_code": "FR",
+        "country_name": "France",
         "number_of_rooms": 1,
         "number_of_bathrooms": 1,
         "max_guests": 2,
-        "latitude": 42.3601,
-        "longitude": -71.0589,
+        "latitude": 44.8333,
+        "longitude": -0.5667,
         "amenities": ["WiFi"],
         "reviews": []
     },

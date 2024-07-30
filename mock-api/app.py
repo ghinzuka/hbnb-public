@@ -1,4 +1,4 @@
-from flask import Flask, request, jsonify, render_template
+from flask import Flask, request, jsonify, render_template, url_for, send_from_directory
 from flask_jwt_extended import JWTManager, create_access_token, jwt_required, get_jwt_identity
 import json
 from uuid import uuid4
@@ -7,6 +7,10 @@ app = Flask(__name__)
 app.config.from_object('config.Config')
 
 jwt = JWTManager(app)
+
+@app.route('/data/<path:filename>')
+def send_data(filename):
+    return send_from_directory('data', filename)
 
 with open('data/users.json') as f:
     users = json.load(f)
@@ -60,10 +64,12 @@ def get_places():
             "city_id": place['city_id'],
             "city_name": place['city_name'],
             "country_code": place['country_code'],
-            "country_name": place['country_name']
+            "country_name": place['country_name'],
+            "image_url": url_for('static', filename=place.get('image_url', 'images/default.jpg'))
         }
         for place in places
     ]
+    print(response)
     return jsonify(response)
 
 @app.route('/places/<place_id>', methods=['GET'])
