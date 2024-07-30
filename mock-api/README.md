@@ -5,19 +5,32 @@ This is a simple testing API for the HBnB Evolution part 3. The API serves as a 
 ## Project Structure
 
 ```
-api/
-│
-├── data/
-│   ├── places.json
+/your-project-directory
+├── data
 │   ├── users.json
+│   ├── places.json
 │   ├── cities.json
 │   └── countries.json
-│
+├── static
+│   ├── images
+│   │   ├── logo.png
+│   │   └── icon.png
+│   ├── styles
+│   │   └── styles.css
+│   └── scripts
+│       └── scripts.js
+├── templates
+│   ├── login.html
+│   ├── index.html
+│   ├── add_review.html
+│   └── place.html
+├── test
+│   └── test_app.py
 ├── app.py
 ├── config.py
+├── README.md
 ├── requirements.txt
-└── README.md
-```
+
 
 ### Data Files
 
