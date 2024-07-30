@@ -1,0 +1,238 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+header {
+    background-color: #FF9800;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    height: 40px;
+}
+
+header nav {
+    margin-left: auto;
+}
+
+header .nav-links {
+    list-style: none;
+    display: flex;
+    margin-left: auto;
+    padding: 0;
+}
+
+header .nav-links li {
+    margin-left: 20px;
+}
+
+header .nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #FF9800;
+}
+
+header .nav-links a:hover {
+    background-color: #ff5722;
+}
+main {
+    padding: 20px;
+	padding-bottom: 100px;
+}
+
+#filter {
+    margin-bottom: 20px;
+}
+
+#places-list {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.place-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 10px;
+    width: calc(33.333% - 40px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.place-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0 0;
+}
+
+.place-card h3 {
+    margin: 10px 0;
+}
+
+.place-card p {
+    margin: 5px 0;
+}
+
+.place-card .details-button {
+    background-color: #FF9800;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.place-card .details-button:hover {
+	background-color: #ff5722;
+}
+
+footer {
+    background-color: #FF9800;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+#login-form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+#login-form h2 {
+    margin-bottom: 20px;
+}
+
+#login-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#login-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+#login-form button {
+    background-color: #FF9800;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#login-form button:hover {
+	background-color: #ff5722;
+}
+
+#place-details {
+    margin-bottom: 20px;
+}
+
+#place-details h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.place-details-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+	max-width: 800px;
+}
+
+.place-details-card .place-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+#reviews {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#reviews h2 {
+    margin-bottom: 20px;
+}
+
+.review-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#add-review {
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #fff;
+    max-width: 800px;
+}
+
+#review-form label {
+    display: block;
+    margin-top: 10px;
+}
+
+#review-form textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+#review-form select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    margin-top: 10px;
+}
+
+#review-form button {
+    width: calc(100% - 20px);
+    background-color: #FF9800;
+    border: none;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+#review-form button:hover {
+    background-color: #ff5722;
+}
