@@ -95,6 +95,7 @@ def get_place(place_id):
         "country_code": place['country_code'],
         "country_name": place['country_name'],
         "amenities": place['amenities'],
+        "image_url": url_for('static', filename=place.get('image_url', 'images/default.jpg')),
         "reviews": place['reviews'] + [r for r in new_reviews if r['place_id'] == place_id]
     }
     return jsonify(response)
