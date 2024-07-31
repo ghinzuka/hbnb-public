@@ -84,9 +84,15 @@ function displayPlaces(places) {
             <h3>${place.host_name}</h3>
             <p>Price per night: $${place.price_per_night}</p>
             <p>Location: ${place.city_name}, ${place.country_name}</p>
-            <button class="details-button">View Details</button>
+            <button class="details-button" data-id="${place.id}">View Details</button>
         `;
         placesList.appendChild(placeDiv); // Append place element
+    });
+    document.querySelectorAll('.details-button').forEach(button => {
+        button.addEventListener('click', (event) => {
+            const placeId = event.target.dataset.id;
+            window.location.href = `place.html?id=${placeId}`;
+        });
     });
 }
 
