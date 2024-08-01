@@ -95,17 +95,33 @@ async function fetchPlaceDetails(placeId, token) {
 
 function displayPlaceDetails(place) {
     const placeDetailsSection = document.getElementById('place-details');
+    
+    const amenitiesIcons = {
+        "WiFi": "wifi.png",
+        "Pool": "pool.png",
+        "Air Conditioning": "ac.png",
+		"Fireplace": "fireplace.png",
+		"Gym": "gym.png"
+        // Ajoutez d'autres équipements et leurs icônes ici
+    };
+
+    const amenitiesHtml = place.amenities.map(amenity => {
+        const icon = amenitiesIcons[amenity];
+        return icon ? `<img src="/static/images/${icon}" alt="${amenity}" class="amenity-icon" title="${amenity}">` : amenity;
+    }).join(' ');
+
     placeDetailsSection.innerHTML = `
         <h1>${place.id}</h1>
         <div class="place-details-card">
-            <img src="${place.image_url ? place.image_url : '/static/images/default.jpg'}" alt="${place.name}" class="place-image">
+            <img src="${place.image_url ? place.image_url : '/static/images/default.png'}" alt="${place.name}" class="place-image">
             <p><strong>Host:</strong> ${place.host_name}</p>
             <p><strong>Price per night:</strong> $${place.price_per_night}</p>
             <p><strong>Location:</strong> ${place.city_name}, ${place.country_name}</p>
             <p><strong>Description:</strong> ${place.description}</p>
-            <p><strong>Amenities:</strong> ${place.amenities.join(', ')}</p>
+            <p><strong>Amenities:</strong> ${amenitiesHtml}</p>
         </div>
     `;
+
 
     const reviewsSection = document.getElementById('reviews');
     reviewsSection.innerHTML = '<h2>Reviews</h2>';

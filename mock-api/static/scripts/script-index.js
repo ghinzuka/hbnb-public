@@ -87,8 +87,9 @@ function displayPlaces(places) {
     placesList.innerHTML = ''; 
 
     places.forEach(place => {
-        const imageUrl = place.image_url ? place.image_url : '/static/images/default.jpg';
+        const imageUrl = place.image_url ? place.image_url : '/static/images/default.png';
         const placeDiv = document.createElement('div');
+        
         placeDiv.className = 'place-card';
         placeDiv.dataset.country = place.country_name;
         placeDiv.innerHTML = `

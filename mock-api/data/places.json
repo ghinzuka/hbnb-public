@@ -18,7 +18,9 @@
         "amenities": [
             "WiFi",
             "Pool",
-            "Air Conditioning"
+            "Air Conditioning",
+            "Fireplace",
+            "Gym"
         ],
         "reviews": [
             {
@@ -48,6 +50,12 @@
                 "rating": "5",
                 "comment": "hohohoho",
                 "place_id": "place-1"
+            },
+            {
+                "reviewer_name": "John Doe",
+                "rating": "4",
+                "comment": "qzkuhqioduh",
+                "place_id": "place-1"
             }
         ]
     },
@@ -67,7 +75,7 @@
         "latitude": 42.3601,
         "longitude": -71.0589,
         "amenities": [
-            "images/icon_wifi.png",
+            "Pool",
             "Fireplace"
         ],
         "image_url": "images/place2.jpg",
@@ -629,7 +637,8 @@
         "amenities": [
             "WiFi",
             "Pool",
-            "Gym"
+            "Gym",
+            "Air Conditioning"
         ],
         "reviews": [
             {

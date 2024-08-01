@@ -81,7 +81,7 @@ main {
     width: 100%;
     max-width: 100%;
     max-height: 300px;
-    height: 300px;
+    height: auto;
     border-radius: 10px 10px 0 0;
 }
 
@@ -263,4 +263,10 @@ footer {
 
 #logout-button:hover {
     background-color: #ff5722;
+}
+
+.amenity-icon {
+    width: 24px;  /* Ajustez la taille de l'icône */
+    height: 24px;
+    margin-right: 5px;
 }
