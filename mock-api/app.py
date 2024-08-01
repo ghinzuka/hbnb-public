@@ -114,14 +114,29 @@ def add_review(place_id):
         return jsonify({"msg": "User not found"}), 404
 
     review_text = request.json.get('review')
+    rating = request.json.get('rating')
+
     new_review = {
-        "user_name": user['name'],
-        "rating": request.json.get('rating'),
+        "reviewer_name": user['name'],
+        "rating": rating,
         "comment": review_text,
         "place_id": place_id
     }
 
-    new_reviews.append(new_review)
+    # Append new review to the corresponding place
+    for place in places:
+        if place['id'] == place_id:
+            if 'reviews' not in place:
+                place['reviews'] = []
+            place['reviews'].append(new_review)
+            break
+    else:
+        return jsonify({"msg": "Place not found"}), 404
+
+    # Save updated places data to JSON file
+    with open('data/places.json', 'w') as f:
+        json.dump(places, f, indent=4)
+
     return jsonify({"msg": "Review added"}), 201
 
 if __name__ == '__main__':

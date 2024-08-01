@@ -13,9 +13,13 @@
         "number_of_bathrooms": 2,
         "max_guests": 6,
         "latitude": 40.7128,
-        "longitude": -74.0060,
+        "longitude": -74.006,
         "image_url": "images/place1.jpg",
-        "amenities": ["WiFi", "Pool", "Air Conditioning"],
+        "amenities": [
+            "WiFi",
+            "Pool",
+            "Air Conditioning"
+        ],
         "reviews": [
             {
                 "user_name": "Jane Smith",
@@ -26,6 +30,12 @@
                 "user_name": "Alice Johnson",
                 "rating": 4,
                 "comment": "Great location but a bit noisy."
+            },
+            {
+                "reviewer_name": "John Doe",
+                "rating": "1",
+                "comment": "blabla",
+                "place_id": "place-1"
             }
         ]
     },
@@ -44,7 +54,10 @@
         "max_guests": 4,
         "latitude": 42.3601,
         "longitude": -71.0589,
-        "amenities": ["WiFi", "Fireplace"],
+        "amenities": [
+            "WiFi",
+            "Fireplace"
+        ],
         "image_url": "images/place2.jpg",
         "reviews": []
     },
@@ -63,7 +76,11 @@
         "max_guests": 8,
         "latitude": 34.0522,
         "longitude": -118.2437,
-        "amenities": ["WiFi", "Pool", "Beach Access"],
+        "amenities": [
+            "WiFi",
+            "Pool",
+            "Beach Access"
+        ],
         "reviews": []
     },
     {
@@ -82,7 +99,10 @@
         "latitude": 43.6532,
         "longitude": -79.3832,
         "image_url": "images/place3.jpg",
-        "amenities": ["WiFi", "Gym"],
+        "amenities": [
+            "WiFi",
+            "Gym"
+        ],
         "reviews": []
     },
     {
@@ -100,7 +120,10 @@
         "max_guests": 6,
         "latitude": 49.2827,
         "longitude": -123.1207,
-        "amenities": ["WiFi", "Fireplace"],
+        "amenities": [
+            "WiFi",
+            "Fireplace"
+        ],
         "reviews": [
             {
                 "user_name": "Alice Johnson",
@@ -123,8 +146,11 @@
         "number_of_bathrooms": 1,
         "max_guests": 2,
         "latitude": 40.7128,
-        "longitude": -74.0060,
-        "amenities": ["WiFi", "Gym"],
+        "longitude": -74.006,
+        "amenities": [
+            "WiFi",
+            "Gym"
+        ],
         "reviews": [
             {
                 "user_name": "John Doe",
@@ -149,7 +175,10 @@
         "latitude": 42.3601,
         "longitude": -71.0589,
         "image_url": "images/place1.jpg",
-        "amenities": ["WiFi", "Breakfast"],
+        "amenities": [
+            "WiFi",
+            "Breakfast"
+        ],
         "reviews": []
     },
     {
@@ -167,7 +196,11 @@
         "max_guests": 12,
         "latitude": 34.0522,
         "longitude": -118.2437,
-        "amenities": ["WiFi", "Pool", "Gym"],
+        "amenities": [
+            "WiFi",
+            "Pool",
+            "Gym"
+        ],
         "reviews": []
     },
     {
@@ -186,7 +219,10 @@
         "max_guests": 6,
         "latitude": 43.6532,
         "longitude": -79.3832,
-        "amenities": ["WiFi", "Fireplace"],
+        "amenities": [
+            "WiFi",
+            "Fireplace"
+        ],
         "reviews": [
             {
                 "user_name": "Jane Smith",
@@ -210,7 +246,11 @@
         "max_guests": 8,
         "latitude": 49.2827,
         "longitude": -123.1207,
-        "amenities": ["WiFi", "Fireplace", "Pool"],
+        "amenities": [
+            "WiFi",
+            "Fireplace",
+            "Pool"
+        ],
         "reviews": []
     },
     {
@@ -227,8 +267,12 @@
         "number_of_bathrooms": 2,
         "max_guests": 4,
         "latitude": 40.7128,
-        "longitude": -74.0060,
-        "amenities": ["WiFi", "Gym", "Pool"],
+        "longitude": -74.006,
+        "amenities": [
+            "WiFi",
+            "Gym",
+            "Pool"
+        ],
         "reviews": [
             {
                 "user_name": "Alice Johnson",
@@ -252,7 +296,9 @@
         "max_guests": 2,
         "latitude": 42.3601,
         "longitude": -71.0589,
-        "amenities": ["WiFi"],
+        "amenities": [
+            "WiFi"
+        ],
         "reviews": []
     },
     {
@@ -270,7 +316,11 @@
         "max_guests": 6,
         "latitude": 34.0522,
         "longitude": -118.2437,
-        "amenities": ["WiFi", "Pool", "Gym"],
+        "amenities": [
+            "WiFi",
+            "Pool",
+            "Gym"
+        ],
         "reviews": [
             {
                 "user_name": "Jane Smith",
@@ -299,7 +349,10 @@
         "max_guests": 4,
         "latitude": 43.6532,
         "longitude": -79.3832,
-        "amenities": ["WiFi", "Fireplace"],
+        "amenities": [
+            "WiFi",
+            "Fireplace"
+        ],
         "reviews": []
     },
     {
@@ -318,7 +371,10 @@
         "latitude": 48.866667,
         "image_url": "images/place6.jpg",
         "longitude": 2.333333,
-        "amenities": ["WiFi", "Fireplace"],
+        "amenities": [
+            "WiFi",
+            "Fireplace"
+        ],
         "reviews": [
             {
                 "user_name": "John Doe",
@@ -341,8 +397,13 @@
         "number_of_bathrooms": 5,
         "max_guests": 12,
         "latitude": 40.7128,
-        "longitude": -74.0060,
-        "amenities": ["WiFi", "Pool", "Gym", "Sauna"],
+        "longitude": -74.006,
+        "amenities": [
+            "WiFi",
+            "Pool",
+            "Gym",
+            "Sauna"
+        ],
         "reviews": []
     },
     {
@@ -361,7 +422,9 @@
         "latitude": 44.8333,
         "image_url": "images/place5.jpg",
         "longitude": -0.5667,
-        "amenities": ["WiFi"],
+        "amenities": [
+            "WiFi"
+        ],
         "reviews": []
     },
     {
@@ -379,7 +442,11 @@
         "max_guests": 8,
         "latitude": 34.0522,
         "longitude": -118.2437,
-        "amenities": ["WiFi", "Pool", "Gym"],
+        "amenities": [
+            "WiFi",
+            "Pool",
+            "Gym"
+        ],
         "reviews": [
             {
                 "user_name": "John Doe",
@@ -403,7 +470,10 @@
         "max_guests": 4,
         "latitude": 43.6532,
         "longitude": -79.3832,
-        "amenities": ["WiFi", "Fireplace"],
+        "amenities": [
+            "WiFi",
+            "Fireplace"
+        ],
         "reviews": []
     },
     {
@@ -421,7 +491,10 @@
         "max_guests": 6,
         "latitude": 49.2827,
         "longitude": -123.1207,
-        "amenities": ["WiFi", "Fireplace"],
+        "amenities": [
+            "WiFi",
+            "Fireplace"
+        ],
         "reviews": []
     },
     {
@@ -438,8 +511,12 @@
         "number_of_bathrooms": 2,
         "max_guests": 6,
         "latitude": 40.7128,
-        "longitude": -74.0060,
-        "amenities": ["WiFi", "Gym", "Pool"],
+        "longitude": -74.006,
+        "amenities": [
+            "WiFi",
+            "Gym",
+            "Pool"
+        ],
         "reviews": [
             {
                 "user_name": "John Doe",
@@ -468,7 +545,10 @@
         "max_guests": 8,
         "latitude": 42.3601,
         "longitude": -71.0589,
-        "amenities": ["WiFi", "Pool"],
+        "amenities": [
+            "WiFi",
+            "Pool"
+        ],
         "reviews": []
     },
     {
@@ -486,7 +566,10 @@
         "max_guests": 8,
         "latitude": 34.0522,
         "longitude": -118.2437,
-        "amenities": ["WiFi", "Pool"],
+        "amenities": [
+            "WiFi",
+            "Pool"
+        ],
         "reviews": []
     },
     {
@@ -504,7 +587,9 @@
         "max_guests": 2,
         "latitude": 43.6532,
         "longitude": -79.3832,
-        "amenities": ["WiFi"],
+        "amenities": [
+            "WiFi"
+        ],
         "reviews": []
     },
     {
@@ -522,7 +607,11 @@
         "max_guests": 10,
         "latitude": 49.2827,
         "longitude": -123.1207,
-        "amenities": ["WiFi", "Pool", "Gym"],
+        "amenities": [
+            "WiFi",
+            "Pool",
+            "Gym"
+        ],
         "reviews": [
             {
                 "user_name": "Jane Smith",

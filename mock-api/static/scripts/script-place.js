@@ -9,7 +9,39 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     checkAuthentication(token);
+
+	document.getElementById('review-form').addEventListener('submit', function(event) {
+        event.preventDefault();
+        submitReview(placeId, token);
+    });
 });
+
+function submitReview(placeId, token) {
+    const reviewText = document.getElementById('review-text').value;
+    const rating = document.getElementById('rating').value;
+
+    fetch(`http://127.0.0.1:5000/places/${placeId}/reviews`, {
+        method: 'POST',
+        headers: {
+            'Authorization': `Bearer ${token}`,
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+            review: reviewText,
+            rating: rating
+        })
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.msg === 'Review added') {
+            alert('Review submitted successfully!');
+            location.reload();
+        } else {
+            alert('Error submitting review.');
+        }
+    })
+    .catch(error => console.error('Error:', error));
+}
 
 function checkAuthentication(token) {
     const loginLink = document.getElementById('login-link');

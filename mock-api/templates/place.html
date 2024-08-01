@@ -30,7 +30,7 @@
         </section>
         <section id="add-review" style="display: none;">
             <h2>Add a Review</h2>
-            <form id="review-form" class="form">
+            <form id="review-form" class="form" method="post" action="/places/{{ place_id }}/reviews">
                 <label for="review-text">Your Review:</label>
                 <textarea id="review-text" name="review-text" required></textarea>
                 
