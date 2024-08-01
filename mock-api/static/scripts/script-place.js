@@ -1,30 +1,70 @@
 document.addEventListener('DOMContentLoaded', () => {
+    const token = getCookie('token');
     const params = new URLSearchParams(window.location.search);
     const placeId = params.get('id');
 
+ 
     if (placeId) {
-        fetchPlaceDetails(placeId);
+        fetchPlaceDetails(placeId, token);
     }
+
+    checkAuthentication(token);
 });
 
-async function fetchPlaceDetails(placeId) {
-    try {
-        const response = await fetch(`http://127.0.0.1:5000/places/${placeId}`);
-        if (response.ok) {
-            const place = await response.json();
-            displayPlaceDetails(place);
-        } else {
-            console.error('Error fetching place details:', response.statusText);
-        }
-    } catch (error) {
-        console.error('Error fetching place details:', error);
+function checkAuthentication(token) {
+    const loginLink = document.getElementById('login-link');
+    const addReviewSection = document.getElementById('add-review');
+	const logoutButton = document.getElementById('logout-button');
+
+    if (!token) {
+        loginLink.style.display = 'inline-block';
+		logoutButton.style.display = 'none';
+        addReviewSection.style.display = 'none';
+
+   
+        const messageSection = document.createElement('p');
+        messageSection.textContent = 'Please log in to add a review.';
+        messageSection.style.color = 'red';
+        addReviewSection.parentNode.insertBefore(messageSection, addReviewSection);
+    } else {
+        loginLink.style.display = 'none';
+		logoutButton.style.display = 'inline-block';
+        addReviewSection.style.display = 'block';
     }
 }
+
+
+function getCookie(name) {
+    const value = `; ${document.cookie}`;
+    const parts = value.split(`; ${name}=`);
+    if (parts.length === 2) return parts.pop().split(';').shift();
+}
+
+async function fetchPlaceDetails(placeId, token) {
+    try {
+        const response = await fetch(`http://127.0.0.1:5000/places/${placeId}`, {
+            method: 'GET',
+            headers: {
+                'Authorization': token ? `Bearer ${token}` : '', 
+                'Content-Type': 'application/json'
+            }
+        });
+        if (response.ok) {
+            const place = await response.json(); 
+            displayPlaceDetails(place); 
+        } else {
+            console.error('Error fetching place details:', response.statusText); 
+        }
+    } catch (error) {
+        console.error('Error fetching place details:', error); 
+    }
+}
+
 
 function displayPlaceDetails(place) {
     const placeDetailsSection = document.getElementById('place-details');
     placeDetailsSection.innerHTML = `
-        <h1>${place.name}</h1>
+        <h1>${place.id}</h1>
         <div class="place-details-card">
             <img src="${place.image_url ? place.image_url : '/static/images/default.jpg'}" alt="${place.name}" class="place-image">
             <p><strong>Host:</strong> ${place.host_name}</p>
@@ -35,9 +75,9 @@ function displayPlaceDetails(place) {
         </div>
     `;
 
-    // Optionally, display reviews if they are part of the place details
+    const reviewsSection = document.getElementById('reviews');
+    reviewsSection.innerHTML = '<h2>Reviews</h2>';
     if (place.reviews && place.reviews.length > 0) {
-        const reviewsSection = document.getElementById('reviews');
         place.reviews.forEach(review => {
             const reviewCard = document.createElement('div');
             reviewCard.className = 'review-card';
@@ -48,6 +88,7 @@ function displayPlaceDetails(place) {
             `;
             reviewsSection.appendChild(reviewCard);
         });
+    } else {
+        reviewsSection.innerHTML += '<p>No reviews yet.</p>'; 
     }
 }
-

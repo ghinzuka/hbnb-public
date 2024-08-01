@@ -21,6 +21,10 @@ with open('data/places.json') as f:
 # In-memory storage for new reviews
 new_reviews = []
 
+@app.route('/add_review.html')
+def review():
+    return render_template('add_review.html')
+
 @app.route('/index.html')
 def index():
     return render_template('index.html')

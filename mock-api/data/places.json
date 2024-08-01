@@ -316,6 +316,7 @@
         "number_of_bathrooms": 2,
         "max_guests": 6,
         "latitude": 48.866667,
+        "image_url": "images/place6.jpg",
         "longitude": 2.333333,
         "amenities": ["WiFi", "Fireplace"],
         "reviews": [
@@ -358,6 +359,7 @@
         "number_of_bathrooms": 1,
         "max_guests": 2,
         "latitude": 44.8333,
+        "image_url": "images/place5.jpg",
         "longitude": -0.5667,
         "amenities": ["WiFi"],
         "reviews": []

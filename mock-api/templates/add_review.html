@@ -8,6 +8,18 @@
     <link rel="icon" href="{{ url_for('static', filename='images/icon.png') }}" type="image/png">
 </head>
 <body>
+    <header>
+        <a href="index.html">
+            <img src="{{ url_for('static', filename='images/logo.png') }}" alt="HBnB Logo" class="logo">
+        </a>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="login.html" id="login-link">Login</a></li>
+                <li><button id="logout-button" class="nav-button" style="display: none;">Logout</button></li> 
+            </ul>
+        </nav>
+    </header>
     <main>
         <form id="review-form">
             <h2>Add a Review</h2>
@@ -17,9 +29,21 @@
             <label for="review">Review:</label>
             <textarea id="review" name="review" required></textarea>
             
+            <label for="rating">Rating:</label>
+            <select id="rating" name="rating" required>
+                <option value="1">★☆☆☆☆</option>
+                <option value="2">★★☆☆☆</option>
+                <option value="3">★★★☆☆</option>
+                <option value="4">★★★★☆</option>
+                <option value="5">★★★★★</option>
+            </select>
+            
             <button type="submit">Submit</button>
         </form>
     </main>
-    <script src="{{ url_for('static', filename='scripts/script.js') }}"></script>
+    <footer>
+        <p>&copy; 2024 HBnB Evolution. All rights reserved.</p>
+    </footer>
+    <script src="{{ url_for('static', filename='scripts/script-add-review.js') }}"></script>
 </body>
 </html>

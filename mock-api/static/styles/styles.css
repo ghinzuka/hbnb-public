@@ -24,7 +24,7 @@ header nav {
 header .nav-links {
     list-style: none;
     display: flex;
-    margin-left: auto;
+    margin-left: 10px;
     padding: 0;
 }
 
@@ -240,5 +240,21 @@ footer {
 }
 
 #review-form button:hover {
+    background-color: #ff5722;
+}
+
+#logout-button {
+    background-color: #FF9800;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: -10px;
+    margin-left: -10px;
+    border-radius: 5px; 
+    cursor: pointer; 
+    font-size: 16px; 
+}
+
+#logout-button:hover {
     background-color: #ff5722;
 }
