@@ -36,6 +36,18 @@
                 "rating": "1",
                 "comment": "blabla",
                 "place_id": "place-1"
+            },
+            {
+                "reviewer_name": "John Doe",
+                "rating": "4",
+                "comment": "blilbi",
+                "place_id": "place-1"
+            },
+            {
+                "reviewer_name": "John Doe",
+                "rating": "5",
+                "comment": "hohohoho",
+                "place_id": "place-1"
             }
         ]
     },
@@ -81,7 +93,14 @@
             "Pool",
             "Beach Access"
         ],
-        "reviews": []
+        "reviews": [
+            {
+                "reviewer_name": "John Doe",
+                "rating": "4",
+                "comment": "youhouuu",
+                "place_id": "place-3"
+            }
+        ]
     },
     {
         "id": "place-4",

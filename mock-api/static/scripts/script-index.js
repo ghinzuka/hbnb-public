@@ -3,14 +3,14 @@ document.addEventListener('DOMContentLoaded', () => {
     checkAuthentication(); 
     fetchPlaces(); 
 
-    // Country filter change event listener
+
     document.getElementById('country-filter').addEventListener('change', (event) => {
         filterPlaces(event.target.value);
     });
 
-    // Logout button event listener
+
     document.getElementById('logout-button').addEventListener('click', () => {
-        logout(); // Call logout function when logout button is clicked
+        logout();
     });
 });
 
@@ -37,11 +37,11 @@ function checkAuthentication() {
     const logoutButton = document.getElementById('logout-button');
 
     if (!token) {
-        loginLink.style.display = 'inline-block'; // Show login link if not authenticated
-        logoutButton.style.display = 'none'; // Hide logout button
+        loginLink.style.display = 'inline-block'; 
+        logoutButton.style.display = 'none';
     } else {
-        loginLink.style.display = 'none'; // Hide login link if authenticated
-        logoutButton.style.display = 'inline-block'; // Show logout button
+        loginLink.style.display = 'none';
+        logoutButton.style.display = 'inline-block';
     }
 }
 
@@ -59,7 +59,7 @@ async function fetchPlaces() {
         'Content-Type': 'application/json'
     };
 
-    // Include the token in the headers if it exists
+
     if (token) {
         headers['Authorization'] = `Bearer ${token}`;
     }
@@ -102,11 +102,11 @@ function displayPlaces(places) {
         placesList.appendChild(placeDiv); 
     });
 
-    // Add click event for each details button
+
     document.querySelectorAll('.details-button').forEach(button => {
         button.addEventListener('click', (event) => {
             const placeId = event.target.dataset.id;
-            window.location.href = `place.html?id=${placeId}`; // Navigate to place details page
+            window.location.href = `place.html?id=${placeId}`;
         });
     });
 }
@@ -116,10 +116,10 @@ function filterPlaces(selectedCountry) {
     displayPlaces(filteredPlaces); 
 }
 
-// Logout function to handle user logout
+
 function logout() {
-    // Clear the token cookie
-    document.cookie = 'token=; expires=Thu, 01 Jan 1970 00:00:01 GMT;'; // Expire the token cookie
-    checkAuthentication(); // Re-check authentication status to update UI
-    fetchPlaces(); // Fetch places again to update the displayed content
+
+    document.cookie = 'token=; expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+    checkAuthentication();
+    fetchPlaces();
 }
