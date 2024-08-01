@@ -67,7 +67,7 @@
         "latitude": 42.3601,
         "longitude": -71.0589,
         "amenities": [
-            "WiFi",
+            "images/icon_wifi.png",
             "Fireplace"
         ],
         "image_url": "images/place2.jpg",

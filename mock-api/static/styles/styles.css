@@ -65,6 +65,9 @@ main {
 }
 
 .place-card {
+    display: flex;                     /* Enable Flexbox layout */
+    flex-direction: column;            /* Arrange items vertically */
+    justify-content: space-between;    /* Distribute space between elements */
     background-color: white;
     border: 1px solid #ddd;
     border-radius: 10px;
@@ -76,7 +79,9 @@ main {
 
 .place-card img {
     width: 100%;
-    height: auto;
+    max-width: 100%;
+    max-height: 300px;
+    height: 300px;
     border-radius: 10px 10px 0 0;
 }
 
@@ -85,7 +90,7 @@ main {
 }
 
 .place-card p {
-    margin: 5px 0;
+    margin: 10px 0;
 }
 
 .place-card .details-button {
@@ -96,6 +101,7 @@ main {
     text-decoration: none;
     border-radius: 5px;
     cursor: pointer;
+    margin-top: auto;
 }
 
 .place-card .details-button:hover {
