@@ -38,6 +38,7 @@ header .nav-links a {
     padding: 10px 20px;
     border-radius: 5px;
     background-color: #FF9800;
+    transition: background-color 0.3s ease;
 }
 
 header .nav-links a:hover {
@@ -102,6 +103,7 @@ main {
     border-radius: 5px;
     cursor: pointer;
     margin-top: auto;
+    transition: background-color 0.3s ease;
 }
 
 .place-card .details-button:hover {
@@ -153,6 +155,7 @@ footer {
     text-decoration: none;
     border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 #login-form button:hover {
@@ -243,6 +246,7 @@ footer {
     border-radius: 5px;
     cursor: pointer;
     margin-top: 20px;
+    transition: background-color 0.3s ease;
 }
 
 #review-form button:hover {
@@ -258,7 +262,8 @@ footer {
     margin-left: -10px;
     border-radius: 5px; 
     cursor: pointer; 
-    font-size: 16px; 
+    font-size: 16px;
+    transition: background-color 0.3s ease; 
 }
 
 #logout-button:hover {
@@ -266,7 +271,23 @@ footer {
 }
 
 .amenity-icon {
-    width: 24px;  /* Ajustez la taille de l'icône */
-    height: 24px;
+    width: 40px;  /* Ajustez la taille de l'icône */
+    height: 40px;
     margin-right: 5px;
+}
+
+#display-more-button {
+    background-color: #FF9800;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px; /* Adjust as needed for spacing */
+    transition: background-color 0.3s ease;
+}
+
+#display-more-button:hover {
+    background-color: #ff5722;
 }

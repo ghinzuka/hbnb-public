@@ -1,5 +1,6 @@
 [
     {
+        "name": "trop beau la place",
         "id": "place-1",
         "host_id": "user-1",
         "host_name": "John Doe",
@@ -55,6 +56,12 @@
                 "reviewer_name": "John Doe",
                 "rating": "4",
                 "comment": "qzkuhqioduh",
+                "place_id": "place-1"
+            },
+            {
+                "reviewer_name": "John Doe",
+                "rating": "4",
+                "comment": "c'est vbeaaauuuuuu",
                 "place_id": "place-1"
             }
         ]
@@ -522,7 +529,14 @@
             "WiFi",
             "Fireplace"
         ],
-        "reviews": []
+        "reviews": [
+            {
+                "reviewer_name": "John Doe",
+                "rating": "5",
+                "comment": "sfsef",
+                "place_id": "place-20"
+            }
+        ]
     },
     {
         "id": "place-21",
